@@ -13,11 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Link href="/about">Hakkında</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/blog/post">Post</Link>
-
-        <Image src="/image/ataturkphoto.png" width={400} height={200} />
+        <h3>Anasayfa</h3>
       </main>
 
       <footer>
