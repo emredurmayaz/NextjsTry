@@ -1,28 +1,23 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+
+
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-       <Link href="/about">
-        Hakkında
-       </Link>
-       <Link href="/blog">
-        Blog
-       </Link>
-       <Link href="/blog/post">
-        Post
-       </Link>
+        <Link href="/about">Hakkında</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/blog/post">Post</Link>
 
-      <Image src="/image/ataturkphoto.png" width={400} height={200}/>
-
+        <Image src="/image/ataturkphoto.png" width={400} height={200} />
       </main>
 
       <footer>
@@ -31,8 +26,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
@@ -181,6 +175,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
-  )
+    </>
+  );
 }
