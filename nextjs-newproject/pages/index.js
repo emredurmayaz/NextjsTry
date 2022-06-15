@@ -10,8 +10,6 @@ export default function Home({ movies }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h3>Popüler Filmler</h3>
-
       <Popular movies={movies} />
     </>
   );
